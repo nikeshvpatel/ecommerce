@@ -31,4 +31,12 @@
     background-color : rgba(0, 0, 0, 0.7);
     border-radius    : 20px;
   }
+
+  .empty-message {
+    font-size : 18px;
+    position  : absolute;
+    top       : 40%;
+    left      : 50%;
+    transform : translate(-50%, -50%);
+  }
 }
