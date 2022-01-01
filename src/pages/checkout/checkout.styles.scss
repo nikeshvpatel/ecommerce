@@ -28,4 +28,34 @@
     margin-left : auto;
     font-size   : 36px;
   }
+
+  button {
+    margin-left : auto;
+    margin-top  : 50px;
+  }
+
+  .test-warning {
+    text-align : center;
+    margin-top : 40px;
+    font-size  : 24px;
+    color      : orangered;
+  }
+}
+
+.card-btn {
+  background-color : #63b8d0;
+  font-size        : 1rem;
+  letter-spacing   : .2rem;
+  border-radius    : .5rem;
+  padding          : .5rem 1rem;
+  display          : inline-block;
+  box-shadow       : 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition       : all .2s ease;
+  color            : white;
+
+  &:hover {
+    box-shadow       : none;
+    transform        : scale(.9);
+    background-color : #2ed576;
+  }
 }

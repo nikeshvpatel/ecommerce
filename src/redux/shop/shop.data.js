@@ -59,8 +59,7 @@ const SHOP_DATA = {
                 price: 16
             }
         ]
-    }
-    ,
+    },
     sneakers: {
         id: 2,
         title: 'Sneakers',
@@ -115,8 +114,7 @@ const SHOP_DATA = {
                 price: 200
             }
         ]
-    }
-    ,
+    },
     jackets: {
         id: 3,
         title: 'Jackets',
@@ -153,8 +151,7 @@ const SHOP_DATA = {
                 price: 185
             }
         ]
-    }
-    ,
+    },
     womens: {
         id: 4,
         title: 'Womens',
@@ -203,8 +200,7 @@ const SHOP_DATA = {
                 price: 20
             }
         ]
-    }
-    ,
+    },
     mens: {
         id: 5,
         title: 'Mens',

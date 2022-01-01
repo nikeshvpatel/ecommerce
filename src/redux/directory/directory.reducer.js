@@ -1,10 +1,11 @@
 const INITIAL_STATE = {
-    sections: [{
-        title: 'hats',
-        imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-        id: 1,
-        linkUrl: 'shop/hats'
-    },
+    sections: [
+        {
+            title: 'hats',
+            imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+            id: 1,
+            linkUrl: 'shop/hats'
+        },
         {
             title: 'jackets',
             imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
@@ -30,7 +31,8 @@ const INITIAL_STATE = {
             size: 'large',
             id: 5,
             linkUrl: 'shop/mens'
-        }]
+        }
+    ]
 }
 
 const directoryReducer = (state = INITIAL_STATE, action) => {

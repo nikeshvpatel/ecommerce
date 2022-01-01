@@ -4,6 +4,7 @@ import {createStructuredSelector} from "reselect";
 import {selectCartItems, selectCartTotal} from "../../redux/cart/cart.selectors";
 import './checkout.styles.scss';
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
+import StripeCheckoutButton from "../../components/stripe-button/stripe-button.component";
 
 const CheckoutPage = ({cartItems, total}) => {
     return (
@@ -16,9 +17,14 @@ const CheckoutPage = ({cartItems, total}) => {
                 <div className="header-block"><span>Remove</span></div>
             </div>
             {
-                cartItems.map(cartItem => <CheckoutItem keu={cartItem.id} cartItem={cartItem}/>)
+                cartItems.map(cartItem => <CheckoutItem key={cartItem.id} cartItem={cartItem}/>)
             }
             <div className="total"><span>Total: ${total}</span></div>
+            <div className="test-warning">
+                *Please click on the following test <a className='card-btn' href="https://stripe.com/docs/testing#cards" target={'_blank'}>credit cards</a> for payments* <br/><br/>
+                Or you can add random card number. It is just a test mode, so won't charge you.
+            </div>
+            <StripeCheckoutButton price={total}/>
         </div>
     );
 };
